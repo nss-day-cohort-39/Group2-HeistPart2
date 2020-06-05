@@ -8,6 +8,10 @@ namespace HeistPart2
         static void Main(string[] args)
         {
 
+            Console.WriteLine("Let's Rob a Bank!");
+            Console.WriteLine("------------------------");
+            Console.WriteLine("Bank Security Info");
+
             //create a new bank to rob
             Bank newHeist = new Bank();
 
