@@ -7,6 +7,14 @@ namespace HeistPart2
     {
         static void Main(string[] args)
         {
+
+            //create a new bank to rob
+            Bank newHeist = new Bank();
+
+            newHeist.bankRecon();
+
+            Console.WriteLine();
+
             Hacker Heidi = new Hacker()
             {
                 Name = "Heidi",
@@ -125,8 +133,8 @@ namespace HeistPart2
                     rolodex.Add(newLockSpecialist);
                 }
 
-               Console.WriteLine("Enter New Team Member's name or press Enter to see list of fellow robbers");
-               newName = Console.ReadLine();
+                Console.WriteLine("Enter New Team Member's name or press Enter to see list of fellow robbers");
+                newName = Console.ReadLine();
             }
 
             foreach (IRobber robber in rolodex)
